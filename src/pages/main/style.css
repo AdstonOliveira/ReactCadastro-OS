@@ -1,0 +1,26 @@
+h2{
+    color: white;
+    text-shadow: 4px 2px 2px #000000; 
+    font-size: 30px;
+}
+h1{
+    color: white;
+    text-shadow: 4px 2px 2px #000000; 
+    font-size: 40px;
+}
+.card{
+    opacity: .8;
+    text-align: center;
+    min-width: 90%; min-height: 170px;
+}
+.card-header > h4{
+    font-size: 18px; font-weight: bolder;text-shadow: 4px 2px 2px lightgray; 
+}
+.card-body{
+    text-align: justify;
+    word-wrap: wrap;
+    font-size: 14px;
+}
+#cards{
+    min-height: 200px; 
+}
