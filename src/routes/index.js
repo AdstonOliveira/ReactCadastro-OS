@@ -7,6 +7,7 @@ import Login from '../pages/Cliente/login';
 const Routes = () => (
         <Switch>
             <Route path="/cliente/login" component={Login} />
+            <Route path="/colaborador/login" component={LoginCol} />
             <Route exact path="/" component={Main} />
         </Switch>
 )
