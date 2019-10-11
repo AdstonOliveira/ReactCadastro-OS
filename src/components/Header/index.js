@@ -12,15 +12,19 @@ export const Header = () => (
     </button>
     <div className="collapse  navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
+
             <li className="nav-item" id="menu_home">
                 <Link to={"/"} className="nav-link" >Home</Link>
             </li>
+
             <li className="nav-item" id="menu_cliente">
                 <Link to={"/cliente/login"} className="nav-link">Área do cliente</Link>
             </li>
+
             <li className="nav-item" id="menu_colaborador">
                 <Link to={"/colaborador/login"} className="nav-link">Área do colaborador</Link>
             </li>
+
         </ul>
     </div>
 
