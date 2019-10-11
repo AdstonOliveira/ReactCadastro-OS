@@ -8,6 +8,7 @@ import ClienteIndex from '../pages/Cliente/ClienteIndex';
 const Routes = () => (
         <Switch>
             <Route path="/cliente/login" component={Login} />
+            <Route path="/colaborador/login" component={LoginCol} />
             <Route exact path="/" component={Main} />
             <Route path="/cliente/index" component={ClienteIndex} />
         </Switch>

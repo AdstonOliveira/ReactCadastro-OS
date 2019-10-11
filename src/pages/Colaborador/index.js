@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Login extends Component{
+class LoginCol extends Component{
 
     render(){
         return <div className="container d-flex justify-content-center align-items-center">
                     <div className="col-4">
                     
                         <div className="card">
-                            <h3 className=" d-flex justify-content-center card-header bg-dark ">Login Cliente</h3>
+                            <h3 className=" d-flex justify-content-center card-header bg-dark ">Login Colaborador</h3>
                                 <div className="card-body">
                                      <form action="" method="POST" id="form">
                                         <div className="form-group">
@@ -35,4 +35,5 @@ class Login extends Component{
 
 
 }
-export default Login;
+export default LoginCol;
+
