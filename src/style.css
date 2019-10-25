@@ -4,3 +4,45 @@
     box-sizing: border-box;
     outline: 0;
 }
+h2{
+    color: white;
+    text-shadow: 4px 2px 2px #000000; 
+    font-size: 30px;
+}
+h1{
+    color: white;
+    text-shadow: 4px 2px 2px #000000; 
+    font-size: 40px;
+}
+.card{
+    opacity: .9;
+    text-align: center;
+    min-width: 90%; min-height: 170px;
+}
+.card-header > h4{
+    font-size: 25px; font-weight: bolder; text-shadow: 4px 2px 2px black; 
+    color: white;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.card-body > p{
+    height: 80%;
+    text-align: center;
+    word-wrap: wrap;
+    font-size: 16px;
+}
+
+#cards{
+    min-height: 200px; 
+}
+.login{
+    height: 300px;
+    font-size: 18px;
+    text-align: justify;
+}
+.card-header{
+    text-align: center;
+    background-color: #3F3F3F;
+}

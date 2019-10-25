@@ -24,7 +24,6 @@ export const Header = () => (
             <li className="nav-item" id="menu_colaborador">
                 <Link to={"/colaborador/login"} className="nav-link">Área do colaborador</Link>
             </li>
-
         </ul>
     </div>
 

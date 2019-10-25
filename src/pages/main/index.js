@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './style.css';
 
 class Main extends Component{
     render(){
@@ -16,20 +15,25 @@ class Main extends Component{
                 <div className="flex col-3">
                     <div className="card">
                         <div className="card-header"><h4>Sobre nós</h4></div>
-                        <div className="card-body">Solução definitiva em manutenção de equipamentos</div>
+                        <div className="card-body">
+                            <p>
+                                Solução definitiva para Gerenciamento de Ordens de Serviço.
+                                Solução para diversos ramos de atividade.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="flex col-3">
                     <div className="card">
                         <div className="card-header"><h4>Cliente</h4></div>
-                        <div className="card-body">Abra chamados, consulte o andamento, 
-                            aprove o orçamento. Tudo isso online!!!</div>
+                        <div className="card-body"><p>Abra chamados, consulte o andamento e 
+                            aprove ou reprove o orçamento. Tudo isso online!!!</p></div>
                     </div>
                 </div>
                 <div className="flex col-3">
                     <div className="card">
                         <div className="card-header"><h4>Colaboradores</h4></div>
-                        <div className="card-body">Especialistas em sua áreas de atuação. Profissionais altamente treinados</div>
+                        <div className="card-body"><p>Especialistas em sua áreas de atuação. Profissionais altamente treinados</p></div>
                     </div>
                 </div>
 
