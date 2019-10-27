@@ -6,7 +6,7 @@ class ClienteIndex extends Component {
             <div>
                 <section class="d-flex flex-column align-items-center border justify-content-between" style={{ height: 500 }}>
 
-                    <h3 className="mt-5"> Bem Vindo Cliente...</h3>
+                    <h3 className="mt-5"> Bem Vindo Cliente... </h3>
 
                     <div class="flex row col-10 border p-5">
 

@@ -4,7 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from '../pages/main';
 import ClienteLogin from '../pages/Cliente/ClienteLogin';
 import ClienteIndex from '../pages/Cliente/ClienteIndex';
+
 import LoginCol from '../pages/Colaborador/ColLogin'
+import ColabIndex from '../pages/Colaborador/ColabIndex';
 
 const Routes = () => (
         <Switch>
@@ -12,6 +14,8 @@ const Routes = () => (
             <Route path="/cliente/index" component={ClienteIndex} />
 
             <Route path="/colaborador/login" component={LoginCol} />
+            <Route path="/colaborador/index" component={ColabIndex} />
+
             <Route exact path="/" component={Main} />
             
         </Switch>
