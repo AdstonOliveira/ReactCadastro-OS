@@ -4,7 +4,7 @@ import Index from '../../components/Index/Index';
 class ColabIndex extends Component{
 
     render(){
-        return <Index />
+        return <Index nome={"Area do Colaborador"}/>
     }
 
 }

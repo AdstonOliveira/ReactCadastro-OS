@@ -7,10 +7,18 @@ class Index extends Component{
 
     render(){
         return <section>
-            <div className="row w-100 border justify-content-center" style={{width: 100}}><h1>{this.props.nome}</h1></div>
-            <div className="row border w-100" style={{height: 100}}>
-                <MenuLateral />
-                <MenuCentral />
+            <div className="justify-content-center"><h1>{this.props.nome}</h1></div>
+            {/* <div className="border justify-content-center"><h1>Testando parametros</h1></div> */}
+            
+            <div className="row flex col">
+
+                <div className="d-flex col col-4">
+                    <MenuLateral />
+                </div>
+                <div className="col">
+                    <MenuCentral />
+                </div>
+
             </div>
         </section>
 
