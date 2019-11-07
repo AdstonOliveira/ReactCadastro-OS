@@ -9,7 +9,6 @@ import LoginCol from '../pages/Colaborador/ColLogin'
 import ColabIndex from '../pages/Colaborador/ColabIndex';
 import novaOs from '../pages/Cliente/novaOS';
 
-
 const Routes = () => (
         <Switch>
             <Route path="/cliente/login" component={ClienteLogin} />
@@ -19,7 +18,6 @@ const Routes = () => (
             <Route path="/colaborador/index" component={ColabIndex} />
 
             <Route exact path="/" component={Main} />
-            
         </Switch>
 )
 export default Routes;
