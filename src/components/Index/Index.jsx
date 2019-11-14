@@ -8,18 +8,16 @@ class Index extends Component{
     render(){
         return <section>
             <div className="justify-content-center"><h1>{this.props.nome}</h1></div>
-            {/* <div className="border justify-content-center"><h1>Testando parametros</h1></div> */}
-            
-            <div className="row flex col">
+                <div className="row flex col">
 
-                <div className="d-flex col col-4">
-                    <MenuLateral />
-                </div>
-                <div className="col">
-                    <MenuCentral />
-                </div>
+                    <div className="d-flex col col-4">
+                        <MenuLateral />
+                    </div>
+                    <div className="col">
+                        <MenuCentral />
+                    </div>
 
-            </div>
+                </div>
         </section>
 
     }

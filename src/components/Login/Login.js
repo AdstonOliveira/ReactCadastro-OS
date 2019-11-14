@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Login extends Component {
 
@@ -25,8 +26,8 @@ class Login extends Component {
                     </form>
 
                     <div className="d-flex justify-content-between">
-                        <a href={this.props.novo} className="card-link">Novo por aqui?</a>
-                        <a href={this.props.recSenha} className="card-link">Esqueceu a senha?</a>
+                        <Link to={this.props.novo} className="card-link">Novo por aqui?</Link>
+                        <Link to={this.props.recSenha} className="card-link">Esqueceu a senha?</Link>
                     </div>
                 </div>
 
