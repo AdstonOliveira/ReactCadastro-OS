@@ -4,8 +4,8 @@ import LoginB from '../../components/Login/Login';
 class LoginCol extends Component{
 
     render(){
-        return  <section className="d-flex flex-column h-100 align-items-center text-center">
-                    <LoginB title="Colaborador Login" />
+        return  <section className="d-flex flex-column align-items-center text-center">
+                    <LoginB title="Colaborador Login" action="/home" novo="" recSenha="" />
                 </section>
     }
 

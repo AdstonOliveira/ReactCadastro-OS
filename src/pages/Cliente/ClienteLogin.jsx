@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import LoginB from '../../components/Login/Login';
 
-class Login extends Component{
+class ClienteLogin extends Component{
 
     render(){
-        return <section className="d-flex flex-column h-100 align-items-center text-center">
-                    <LoginB title="Cliente Login" />
+        return <section className="flex flex-column align-items-center text-center">
+
+                    <LoginB title="Cliente Login" action="/home" novo="" recSenha="" />
+                    
                 </section>
     }
 
 
 
 }
-export default Login;
+export default ClienteLogin;
