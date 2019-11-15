@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
+import lista from './botoes.json';
+import Botao from './Botao';
 
 class MenuLateral extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            botoes: lista.botoes,
+        }
+    }
+
 
     render() {
         return <div className="container d-flex flex-column justify-content-between">
+            
+                {   this.state.botoes.map( botao => (
+                    <div className="row-btn">
+                       <Botao url={botao.url} title={botao.title} />
+                    </div>
+                ))
+                }
+            
+            
 
-            <div className="row-btn">
-                <a href="/cliente/novaOs" className="btn btn-secondary h-100 w-75 p-5">Abrir OS</a>
-            </div>
-
-            <div className="row-btn">
+            {/* <div className="row-btn">
                 <a href="/cliente/consultarAbertas/{id_cliente}" className="btn btn-secondary p-5 w-75">Consultar OS</a>
             </div>
 
@@ -19,7 +34,7 @@ class MenuLateral extends Component {
 
             <div className="row-btn">
                 <a href="/cliente/contato" className="btn btn-secondary p-5 w-75 ">Mensagem ao Tecnico</a>
-            </div>
+            </div> */}
         </div>
 
     }

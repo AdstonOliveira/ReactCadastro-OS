@@ -17,7 +17,7 @@ class Login extends Component {
     }
     
     handleSubmit() {
-        alert(this.props.action);
+        window.location.href = this.props.action;
 
     }
     
