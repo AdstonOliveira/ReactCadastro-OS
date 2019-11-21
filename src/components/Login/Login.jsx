@@ -19,6 +19,7 @@ class Login extends Component {
     handleSubmit() {
         let login = {'usuario': this.state.usuario, 'senha': this.state.senha}
         localStorage.setItem('user', JSON.stringify(login));
+        window.location.href = this.props.action;
 
         var objSalvo = localStorage.getItem('user');
 

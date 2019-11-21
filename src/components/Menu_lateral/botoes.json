@@ -1,0 +1,24 @@
+{
+    "botoes": [
+        {
+            "id": 1,
+            "title": "NovaOS",
+            "url": "/cliente/novaOs"
+        },
+        {
+            "id": 2,
+            "title": "Consultar OS",
+            "url": "/cliente/consultarAbertas/{id_cliente}"
+        },
+        {
+            "id": 3,
+            "title": "Orçamentos Abertos",
+            "url": "/cliente/orcamentos"
+        },
+        {
+            "id": 4,
+            "title": "Mensagem ao Técnico",
+            "url": "/cliente/contato"
+        }
+    ]
+}
