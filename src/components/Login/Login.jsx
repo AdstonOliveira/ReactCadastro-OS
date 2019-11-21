@@ -6,7 +6,7 @@ class Login extends Component {
         super(props);
         this.state = {
             usuario: '',
-            senha: ''
+            senha: '' ,
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,10 +17,19 @@ class Login extends Component {
     }
     
     handleSubmit() {
-        alert(this.props.action);
+        let login = {'usuario': this.state.usuario, 'senha': this.state.senha}
+        localStorage.setItem('user', JSON.stringify(login));
 
+        var objSalvo = localStorage.getItem('user');
+
+        console.log('objSalvo: ', JSON.parse(objSalvo));
+        // alert(this.props.action);
     }
     
+
+
+
+
     render() {
         return <div className="col-4 mt-5 mb-5">
             <div className="card login">
@@ -40,11 +49,13 @@ class Login extends Component {
                     <div className="form-group pt-3">
                         <input onClick={this.handleSubmit} type="submit" id="enviar" value="Entrar" className="col-12 btn btn-primary btn-lg"></input>
                     </div>
-
+                    
+                    { this.props.novo && (
                     <div className="d-flex justify-content-between" id="links">
                         <Link to={this.props.novo} className="card-link">Novo por aqui?</Link>
                         <Link to={this.props.recSenha} className="card-link">Esqueceu a senha?</Link>
                     </div>
+                    ) }
                 </div>
 
             </div>
