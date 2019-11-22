@@ -15,6 +15,7 @@ class Index extends Component{
                     </div>
                     <div className="col">
                         <MenuCentral />
+                        
                     </div>
 
                 </div>

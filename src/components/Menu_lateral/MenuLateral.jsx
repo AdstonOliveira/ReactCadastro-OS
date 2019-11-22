@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import lista from './botoes.json';
 import Botao from './Botao';
+import '../os/style.css';
 
 class MenuLateral extends Component {
     constructor(props){
